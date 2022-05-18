@@ -227,27 +227,20 @@
 
 // //4 - Crie uma função que receba um array de nomes e retorne o nome com a maior quantidade de caracteres.
 
-function mairoNome(nome){
-    // let array = ['java', 'javascript', 'python', 'html', 'css'];
+// function maiorNome(nome){
 
-// let smallestWord = array[0];
-// // let smallestWord = [];
-// let maiorPalavra = [];
+//   let maiorPalavra = [];
 
-// for(let i = 0; i < array.length; i += 1){
-//     if(array[i].length > maiorPalavra.length){
-//         maiorPalavra = array[i];
-//     }
+//   for(let i in nome){
+//       if(nome[i].length > maiorPalavra.length){
+//           maiorPalavra = nome[i];
+//       }
+//   }
+
+//   return ('A maior palavra é: ' + maiorPalavra);
+
 // }
 
-// for(let index = 0; index < array.length; index += 1) {
-//     if (array[index].length < smallestWord.length) {
-//         smallestWord = array[index];
-//     }
-// }
+// console.log(maiorNome(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']));
 
-
-// console.log('A maior palavra é: ' + maiorPalavra);
-// console.log('A menor palavra é: ' + smallestWord );
-
-}
+// //5 - E
