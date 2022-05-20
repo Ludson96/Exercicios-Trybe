@@ -192,14 +192,43 @@
 
 // //3 - Agora crie um novo array a partir do array numbers, sem perdê-lo. Cada valor do novo array deverá ser igual ao valor correspondente no array numbers multiplicado pelo seguinte. Por exemplo: o primeiro valor do novo array deverá ser 45, pois é a multiplicação de 5 (primeiro valor) e 9 (valor seguinte). Já o segundo valor do novo array deverá ser 27, pois é a multiplicação de 9 (segundo valor) e 3 (valor seguinte), e assim por diante. Caso não haja próximo valor, a multiplicação deverá ser feita por 2. Faça isso utilizando o for e o método push. O resultado deve ser o array abaixo:
 
-let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
-let newNumbers = [];
-for (let index = 0; index < numbers.length; index += 1) {
-  if(numbers[index + 1] == undefined){
-    newNumbers.push(numbers[index] * 2);
-    break;
-  }
-  newNumbers.push(numbers[index] * numbers[index + 1]);
-  }
+// let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+// let newNumbers = [];
+// for (let index = 0; index < numbers.length; index += 1) {
+//   if(numbers[index + 1] == undefined){
+//     newNumbers.push(numbers[index] * 2);
+//     break;
+//   }
+//   newNumbers.push(numbers[index] * numbers[index + 1]);
+//   }f:::;;
 
-  console.log(newNumbers);
+//   console.log(newNumbers);
+
+// function catAndMouse(mouse, cat1, cat2) {
+//   let valorRato = -1 *mouse;
+//   let valorCat1 = -1 * cat1;
+//   let valorCat2 = -1 * cat2;
+//   if (valorCat1 < valorCat2) {
+//     return 'cat1';
+//   } else if (valorCat1 === valorRato && valorCat2 === valorRato) {
+//     return 'os gatos trombam e o rato foge';
+//   } return 'cat2';
+
+// }
+
+// console.log(catAndMouse(1, 0, 2));;
+function techList(array, nome) {
+    array.sort();
+    let tecnologia = [];
+    for (let index = 0; index < array.length; index += 1) {
+      tecnologia.push({
+        tech: array[index],
+        name: nome,
+      });
+      if (array === null && nome === null) {
+        return 'Vazio!';
+      }
+    }
+    return tecnologia;
+  }
+  console.log(techList());
