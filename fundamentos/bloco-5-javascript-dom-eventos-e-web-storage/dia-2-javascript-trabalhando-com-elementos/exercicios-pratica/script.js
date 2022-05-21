@@ -35,7 +35,8 @@ main.appendChild(section3);
 
 // //7 - 🚀 Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image. Esse elemento deve ser filho do section criado no passo 5;
 
-let img = document.createElement('src');
+let img = document.createElement('img');
+img.src = 'https://picsum.photos/200'
 img.className = 'small-image';
 section2.appendChild(img);
 
@@ -43,12 +44,13 @@ section2.appendChild(img);
 
 let ul = document.createElement('ul');
 section3.appendChild(ul);
+let crescente = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis',
+'Sete', 'Oito', 'Nove', 'Dez'];
 
-
-for (let index = 1; index <= 10; index += 1) {
-    let crescente = index;
+for (let num in crescente) {
+    
     let criacaoLi = document.createElement('li');
-    criacaoLi.innerText = crescente;
+    criacaoLi.innerText = crescente[num];
     ul.appendChild(criacaoLi);
 }
 

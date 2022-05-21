@@ -28,29 +28,45 @@
 //     }
 // }
 
-const pai = document.getElementById('pai');
-
-for (let index = pai.childNodes.length -1; index >= 0; index -= 1) {
-    console.log(pai.childNodes);
-    const currentChildren = pai.childNodes[index];
-    if (currentChildren.id !== 'elementoOndeVoceEsta') {
-        currentChildren.remove();
-    }
-}
-
-const segundoEUltimoFilhoDoFilho = document.getElementById('segundoEUltimoFilhoDoFilho');
-segundoEUltimoFilhoDoFilho.remove();
-
-console.log(pai.childNodes);
-
 // const pai = document.getElementById('pai');
 
-// for (let index = pai.childNodes.length - 1; index >= 0; index -= 1) {
-//   const currentChildren = pai.childNodes[index];
-//   if (currentChildren.id !== 'elementoOndeVoceEsta') {
-//     currentChildren.remove();
-//   }
+// for (let index = pai.childNodes.length -1; index >= 0; index -= 1) {
+//     const currentChildren = pai.childNodes[index];
+//     if (currentChildren.id !== 'elementoOndeVoceEsta') {
+//         currentChildren.remove();
+//     }
 // }
 
 // const segundoEUltimoFilhoDoFilho = document.getElementById('segundoEUltimoFilhoDoFilho');
 // segundoEUltimoFilhoDoFilho.remove();
+
+// const pai = document.getElementById('pai');
+
+// for (let index = 0; index < pai.childNodes.length -1; index += 1) {
+//   const currentChildren = pai.childNodes[index];
+//   console.log(currentChildren);
+//   if (currentChildren.id !== 'elementoOndeVoceEsta') {
+//     currentChildren.remove();
+//   }
+// }
+// console.log(pai.childNodes.length);
+// const segundoEUltimoFilhoDoFilho = document.getElementById('segundoEUltimoFilhoDoFilho');
+// segundoEUltimoFilhoDoFilho.remove();
+
+// for (let index = 9 -1; index >= 0; index -= 1) {
+//     console.log(index);
+// }
+
+const pai = document.getElementById('pai');
+
+    for (let index = 0; index < pai.childNodes.length - 1; index += 1) {
+      const currentChildren = pai.childNodes[index];
+      console.log(pai.childNodes.length);
+      console.log(currentChildren);
+      if (currentChildren.id !== 'elementoOndeVoceEsta') {
+        currentChildren.remove();
+      }
+    }
+
+    const segundoEUltimoFilhoDoFilho = document.getElementById('segundoEUltimoFilhoDoFilho');
+    segundoEUltimoFilhoDoFilho.remove();
