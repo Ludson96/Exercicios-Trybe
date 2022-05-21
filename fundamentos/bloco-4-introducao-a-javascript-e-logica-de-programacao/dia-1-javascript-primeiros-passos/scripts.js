@@ -185,25 +185,30 @@
 
 // //11 - Uma pessoa que trabalha de carteira assinada no Brasil tem descontados de seu salário bruto o INSS e o IR. Faça um programa que, dado um salário bruto, calcule o líquido a ser recebido.
 
-let salario = 1556.94;
-let salarioMenosInss = null;
-let salarioFinal = null;
+let salario = 3000;
+let salarioMenosInss = 0;
+let salarioMenosIr = 0;
+let salarioFinal = 0;
 
 if (salario <= 1556.94){
-    salarioMenosInss = salario -  (salario * 0.08);
+  salarioMenosInss = salario -  ((salario * 8) / 100);
 
 } else if (salario <= 2594.92) {
-    salarioMenosInss = salario -  (salario * 0.09);
+  salarioMenosInss = salario -  ((salario * 9) /100);
     
 } else if (salario <= 5189.82) {
-    salarioMenosInss = salario -  (salario * 0.11);
+  salarioMenosInss = salario -  ((salario * 11) / 100);
 
-} else if (salario >5189.82) {
-    salarioMenosInss = salario -  570.88;
+} else salarioMenosInss = salario -  570.88;
 
-} 
-
-if (salarioMenosInss > 1903.98) {
-    salarioFinal = salario -  (salario * 0.08)
+if (salarioMenosInss >= 1903.99 && salarioMenosInss <= 2826.65) {
+  salarioFinal = salarioMenosInss - Math.abs((142.80 - ((salarioMenosInss * 7.5) / 100)));
+} else if (salarioMenosInss <= 3751.05) {
+  salarioFinal = salarioMenosInss - Math.abs((354.80 - ((salarioMenosInss * 15) / 100)));
+} else if (salarioMenosInss <= 4664.68) {
+  salarioFinal = salarioMenosInss - Math.abs((636.13 - ((salarioMenosInss * 22.5) / 100)));
+} else if (salarioMenosInss > 4664.68) {
+  salarioFinal = salarioMenosInss - Math.abs((869.36 - ((salarioMenosInss * 27.5) / 100)));
 }
 
+console.log('Meu salário Bruto é: R$ ' + salario + '\nMeu salário com o INSS descontado é: R$ ' + salarioMenosInss + '\nMeu salário líquido é: R$ ' + salarioFinal);
