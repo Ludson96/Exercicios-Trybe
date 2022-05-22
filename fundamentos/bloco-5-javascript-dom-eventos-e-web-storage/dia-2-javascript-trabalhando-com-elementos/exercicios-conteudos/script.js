@@ -57,16 +57,34 @@
 //     console.log(index);
 // }
 
-const pai = document.getElementById('pai');
+// const pai = document.getElementById('pai');
 
-    for (let index = 0; index < pai.childNodes.length - 1; index += 1) {
-      const currentChildren = pai.childNodes[index];
-      console.log(pai.childNodes.length);
-      console.log(currentChildren);
-      if (currentChildren.id !== 'elementoOndeVoceEsta') {
-        currentChildren.remove();
-      }
-    }
+//     for (let index = 0; index < pai.childNodes.length - 1; index += 1) {
+//       const currentChildren = pai.childNodes[index];
+//       console.log(pai.childNodes.length);
+//       console.log(currentChildren);
+//       if (currentChildren.id !== 'elementoOndeVoceEsta') {
+//         currentChildren.remove();
+//       }
+//     }
 
-    const segundoEUltimoFilhoDoFilho = document.getElementById('segundoEUltimoFilhoDoFilho');
-    segundoEUltimoFilhoDoFilho.remove();
+//     const segundoEUltimoFilhoDoFilho = document.getElementById('segundoEUltimoFilhoDoFilho');
+//     segundoEUltimoFilhoDoFilho.remove();
+
+// //1 - Crie um irmão para elementoOndeVoceEsta.
+let elementSection = document.createElement('section');
+let pai = document.getElementById('pai');
+pai.appendChild(elementSection);
+
+// //2 - Crie um filho para elementoOndeVoceEsta.
+let elementOndeVoceEsta = document.getElementById('elementoOndeVoceEsta');
+let elementSection2 = document.createElement('section');
+elementOndeVoceEsta.appendChild(elementSection2);
+
+// //3 -Crie um filho para primeiroFilhoDoFilho 
+let elementSection3 = document.createElement('section');
+let elementFirstSon = document.getElementById('primeiroFilhoDoFilho');
+elementSection3.className = 'teste3';
+elementFirstSon.appendChild(elementSection3);
+
+// //4 - A partir desse filho criado, acesse terceiroFilho.
