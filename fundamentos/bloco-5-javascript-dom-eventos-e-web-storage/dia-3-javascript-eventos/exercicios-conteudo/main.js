@@ -36,7 +36,7 @@ input.addEventListener('input', alteraTexto);
 // redirecione para alguma página;
 // 4.1. Que tal redirecionar para seu portfólio?
 function dClick(event) {
-  window.open('https://www.youtube.com/watch?v=F60ZReNGoUo', '_blank');
+  open('https://www.youtube.com/watch?v=F60ZReNGoUo', '_blank');
 }
 
 myWebpage.addEventListener('dblclick', dClick);
