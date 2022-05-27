@@ -243,4 +243,50 @@
 
 // console.log(maiorNome(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']));
 
-// //5 - E
+// //5 - 🚀 5 - Crie uma função que receba um array de inteiros e retorne o inteiro que mais se repete.
+// // Array de teste: [2, 3, 2, 5, 8, 2, 3];.
+// // Valor esperado no retorno da função: 2.
+// function repetido(array) {
+//   let contRepetido = 0;
+//   let contNumero = 0;
+//   let indexNumeroRepetido = 0;
+//   for (index = 0; index < array.length; index += 1) {
+//     let verificaNumero = numeros[index];
+//     for (index2 = 0; index2 < array.length; index2 += 1) {
+//       if (verificaNumero === array[index2]) {
+//         contNumero += 1;
+//       }
+//     }
+//     if (contNumero > contRepetido) {
+//       contRepetido = contNumero;
+
+//     }
+//   }
+// }
+
+// //6 - Crie uma função que receba um número natural (número inteiro não negativo) N e retorne o somatório de todos os números de 1 até N.
+// function somatorio(n) {
+//   let somado = 0;
+//   for (index = 0; index <= n; index += 1) {
+//     somado += index;
+//   }
+//   return somado;
+// }
+
+// console.log(somatorio(5));
+
+// //7 - Crie uma função que receba uma string word e outra string ending. Verifique se a string ending é o final da string word. Considere que a string ending sempre será menor que a string word.
+// function verificaFimPalavra(word, ending) {
+//   let resposta = 0;
+//   for (index = 1; index < ending.length; index += 1) {
+//     if (word[word.length - index] === ending[ending.length - index]){
+//       resposta = true;
+//     } else {
+//       resposta = false;
+//     }
+//   }
+//   return resposta;
+
+// }
+
+// console.log(verificaFimPalavra('joaofernando', 'fernan'));
