@@ -64,3 +64,47 @@
 // }
 
 // console.log(biggestPrimeNumber);
+
+// //Bônus 
+// //1 - Agora vamos trabalhar com algumas formas geométricas! Faça um programa que, dado um valor n qualquer, seja n > 1, imprima na tela um quadrado feito de asteriscos de lado de tamanho n. Por exemplo:
+// let n = 5
+// let asteristico = '';
+
+// for (let index = 0; index <= n; index += 1) {
+//   console.log(asteristico);
+//   asteristico = '';
+
+//   for (let segundoIndex = 0; segundoIndex < n; segundoIndex += 1) {
+//   asteristico += '*';    
+//   }
+// }
+
+// //2- Para o segundo exercício, faça o mesmo que antes, mas que imprima um triângulo retângulo com 5 asteriscos de base. Por exemplo:
+// let n = 5;
+// let asteriscos = '';
+
+// for (let index = 0; index < n; index += 1) {
+//   asteriscos += '*';
+//   console.log(asteriscos);
+// }
+
+// //3- Agora inverta o lado do triângulo. Por exemplo:
+// let n = 5;
+// let asterisco = '';
+// let nColunas = n;
+
+// for (let index = 0; index < n; index += 1) {
+//   for (let segundoIndex = 0; segundoIndex <= n; segundoIndex += 1) {
+//     if (segundoIndex < nColunas){
+//     asterisco += ' ';   
+//     } else {
+//       asterisco += '*';
+//     }
+//   }
+//   console.log(asterisco);
+//   asterisco = '';
+//   nColunas -= 1;
+// };
+
+// //4 - Depois, faça uma pirâmide com n asteriscos de base:
+
