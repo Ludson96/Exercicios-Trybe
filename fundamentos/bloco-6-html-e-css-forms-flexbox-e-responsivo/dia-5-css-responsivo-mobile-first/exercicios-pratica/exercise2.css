@@ -1,0 +1,98 @@
+html {
+  box-sizing: border-box;
+}
+  
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Layout pequeno */
+@media (max-width: 700px) {
+  body {
+    background-color:#EAE5E6 ;
+    font-size: 16px;
+    margin: 15px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    text-align: center;
+    /* width: 430px; */
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  p {
+    text-align: justify;
+    /* width: 400px; */
+  }
+}
+
+/* Layout médio */
+@media (min-width: 700px) and (max-width: 1300px) {
+  body {
+    background-color: #D4CAC6;
+    font-size: 30px;
+    margin: 20px;
+  }
+
+  h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 35px;
+  }
+
+  h3 {
+    font-size: 30px;
+  }
+
+  p {
+    text-align: justify;
+  }
+}
+
+/* Layout grande */
+@media (min-width: 1300px) {
+  body {
+    background-color: #F1DEC2;
+    font-size: 40px;
+    margin: 40px;
+  }
+
+  h1 {
+    font-size: 60px;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 50px;
+  }
+
+  h3 {
+    font-size: 40px;
+  }
+
+  p {
+    text-align: justify;
+  }
+
+  .cabecalho {
+    display: flex;
+  }
+
+  .aside-one {
+    margin-right: 10%;
+  }
+  .aside-two {
+    margin-left: 10%;
+  }
+}
