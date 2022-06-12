@@ -1,6 +1,6 @@
  #Trybe
 
-Este repositório contém todas as atividades de aprendizagem desenvolvidas por _[Ludson Pereira dos Santos][(https://www.linkedin.com/in/ludson96/)]_ enquanto estudava na [Trybe](https://www.betrybe.com/) :rocket:
+Este repositório contém todas as atividades de aprendizagem desenvolvidas por _[Ludson Pereira dos Santos](https://www.linkedin.com/in/ludson96/)_ enquanto estudava na [Trybe](https://www.betrybe.com/) :rocket:
 
 _"A Trybe é uma escola do futuro para qualquer pessoa que queira melhorar de vida e construir uma carreira de sucesso em tecnologia, onde a pessoa só paga quando conseguir um bom trabalho."_
 
@@ -25,7 +25,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 3-2: _HTML & CSS - Primeiros passos em CSS_
 - [x] 3-3: _HTML & CSS - Seletores e posicionamento_
 - [x] 3-4: _HTML Semântico_
-- [x] 3-5: _[Projeto - HTML & CSS]()_
+- [x] 3-5: _Projeto - HTML & CSS_
 
 ##### Bloco 4: Introdução - JavaScript
 
@@ -33,7 +33,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 4-2: _JavaScript - Array e loop For_
 - [x] 4-3: _JavaScript - Lógica de Programação e Algoritmos_
 - [x] 4-4: _JavaScript - Objetos e funções_
-- [x] 4-5: _[Projeto - Playground Functions]()_
+- [x] 4-5: _Projeto - Playground Functions_
 
 ##### Bloco 5: Introdução - JavaScript - Projetos
 
@@ -41,11 +41,11 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 5-2: _JavaScript - Trabalhando com elementos_
 - [x] 5-3: _JavaScript - Eventos_
 - [x] 5-4: _JavaScript - Web Storage_
-- [X] 5-5: _[Projeto - Meme Generator]()_
-- [X] 5-6: _[Projeto - Arte com Pixels]()_
-- [X] 5-7: _[Projeto - Lista de tarefas]()_
-- [X] 5-7: _[Projeto - Adivinhe a Cor]()_
-- [X] 5-7: _[Projeto - Carta Misteriosa]()_
+- [X] 5-5: _Projeto - Meme Generator_
+- [X] 5-6: _Projeto - Arte com Pixels_
+- [X] 5-7: _Projeto - Lista de tarefas
+- [X] 5-7: _Projeto - Adivinhe a Cor
+- [X] 5-7: _Projeto - Carta Misteriosa
 
 ##### Bloco 6: HTML & CSS avançado
 
@@ -54,14 +54,14 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 6-3: _CSS Flexbox - Part 1_
 - [X] 6-4: _CSS Flexbox - Part 2_
 - [X] 6-5: _CSS Responsivo - Mobile First_
-- [X] 6-6: _[Projeto - Página inicial do Facebook]()_
+- [X] 6-6: _Projeto - Página inicial do Facebook
 
 ##### Bloco 7: JavaScript ES6 & Testes Unitários
 
 - [X] 7-1: _JavaScript ES6 - let, const, arrow functions e template literals_
 - [X] 7-2: _JavaScript ES6 - Objects_
 - [X] 7-3: _Testes unitários em JavaScript_
-- [X] 7-4: _[Projeto - JavaScript Testes Unitários]()_
+- [X] 7-4: _Projeto - JavaScript Testes Unitários
 
 ##### Bloco 8: JavaScript ES6
 
@@ -69,20 +69,20 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 8-2: _JavaScript ES6 - Higher Order Functions - map e filter_
 - [ ] 8-3: _JavaScript ES6 - Higher Order Functions - reduce_
 - [ ] 8-4: _JavaScript ES6 - spread operator, rest parameter, destructuring e mais_
-- [ ] 8-5: _[Projeto - Zoo functions]()_
+- [ ] 8-5: _Projeto - Zoo functions
 
 ##### Bloco 9: Assincronicidade & Callbacks
 
 - [ ] 9-1: _JavaScript Assíncrono e Callbacks_
 - [ ] 9-2: _JavaScript Promises_
-- [ ] 9-3: _[Projeto - Carrinho de Compras]()_
+- [ ] 9-3: _Projeto - Carrinho de Compras
 
 ##### Bloco 10: Jest
 
 - [ ] 10-1: _Primeiros passos no Jest_
 - [ ] 10-2: _Jest - Testes Assíncronos_
 - [ ] 10-3: _Jest - Simulando comportamentos_
-- [ ] 10-4: _[Projeto - Jest AssÃ­ncrono e Mocking]()_
+- [ ] 10-4: _Projeto - Jest AssÃ­ncrono e Mocking
 
 ## Desenvolvimento Front-end :hourglass_flowing_sand:
 
@@ -90,20 +90,20 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [ ] 11-1: _'Hello, world!' no React!_
 - [ ] 11-2: _Componentes React_
-- [ ] 11-3: _[Projeto - Movie Cards Library]()_
+- [ ] 11-3: _Projeto - Movie Cards Library
 
 ##### Bloco 12: React
 
 - [ ] 12-1: _Components com estado_
 - [ ] 12-2: _Eventos e formulários no React_
-- [ ] - [ ] 12-3: _[Projeto - Movie Cards Library Stateful]()_
+- [ ] - [ ] 12-3: _Projeto - Movie Cards Library Stateful
 
 ##### Bloco 13: React
 
 - [ ] 13-1: _Melhorando o reuso de componentes: props.children e PropTypes_
 - [ ] 13-2: _Ciclo de vida de componentes em React_
 - [ ] 13-3: _React Router_
-- [ ] 13-4: _[Projeto - Movie Cards Library CRUD]()_
+- [ ] 13-4: _Projeto - Movie Cards Library CRUD
 
 ##### Bloco 14: Metodologias Ágeis
 
