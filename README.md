@@ -43,9 +43,9 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 5-4: _JavaScript - Web Storage_
 - [X] 5-5: _Projeto - Meme Generator_
 - [X] 5-6: _Projeto - Arte com Pixels_
-- [X] 5-7: _Projeto - Lista de tarefas
-- [X] 5-7: _Projeto - Adivinhe a Cor
-- [X] 5-7: _Projeto - Carta Misteriosa
+- [X] 5-7: _Projeto - Lista de tarefas_
+- [X] 5-7: _Projeto - Adivinhe a Cor_
+- [X] 5-7: _Projeto - Carta Misteriosa_
 
 ##### Bloco 6: HTML & CSS avançado
 
@@ -54,14 +54,14 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 6-3: _CSS Flexbox - Part 1_
 - [X] 6-4: _CSS Flexbox - Part 2_
 - [X] 6-5: _CSS Responsivo - Mobile First_
-- [X] 6-6: _[Projeto - Projeto - Trybewarts]()
+- [X] 6-6: _[Projeto - Projeto - Trybewarts]()_
 
 ##### Bloco 7: JavaScript ES6 & Testes Unitários
 
 - [X] 7-1: _JavaScript ES6 - let, const, arrow functions e template literals_
 - [X] 7-2: _JavaScript ES6 - Objects_
 - [X] 7-3: _Testes unitários em JavaScript_
-- [ ] 7-4: _Projeto - JavaScript Testes Unitários
+- [ ] 7-4: _Projeto - JavaScript Testes Unitários_
 
 ##### Bloco 8: JavaScript ES6
 
