@@ -55,7 +55,20 @@
 
 // console.log(converte('Bebeto'));
 
-let determinada = 'Tryber x aqui!';
-determinada = 'bebeto'
+// let determinada = 'Tryber x aqui!';
+// determinada = 'bebeto'
 
-console.log(determinada);
+// console.log(determinada);
+
+
+// // 2 - 
+// const longestWord = (string) => {
+//   const separada = string.split(' ');
+//   // let palavraMaior = '';
+//   for (let word of separada) {
+//     console.log(`Esse é o index: ${word.length}`);
+//     }
+//   // return palavraMaior;
+// }
+
+// console.log(longestWord('Antônio foi no banheiroaaaaaa e não sabemos o que'));
