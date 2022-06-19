@@ -1,12 +1,17 @@
-p{
-    width: 1000px;
-    text-align: justify;
+p {
+  width: 1000px;
+  text-align: justify;
 }
 
-tr{
-    text-align: center;
+tr {
+  text-align: center;
 }
 
-ul{
-    list-style: none;
+ul {
+  list-style: none;
+}
+
+.aside {
+  display: flex;
+  
 }
