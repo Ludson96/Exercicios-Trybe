@@ -72,6 +72,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 8-5: _JavaScript ES6 - spread operator, rest parameter, destructuring e mais_
 - [X] 8-6: _Projeto - Zoo functions_
 
+## Desenvolvimento Front-end :hourglass_flowing_sand:
 ##### Bloco 9: Assincronicidade & Callbacks
 
 - [X] 9-1: _JavaScript Assíncrono e Callbacks_
@@ -84,8 +85,6 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 10-2: _Jest - Testes Assíncronos_
 - [ ] 10-3: _Jest - Simulando comportamentos_
 - [ ] 10-4: _Projeto - Jest AssÃ­ncrono e Mocking_
-
-## Desenvolvimento Front-end :hourglass_flowing_sand:
 
 ##### Bloco 11: Introdução - React
 
