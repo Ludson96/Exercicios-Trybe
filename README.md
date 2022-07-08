@@ -73,11 +73,13 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 8-6: _Projeto - Zoo functions_
 
 ## Desenvolvimento Front-end :hourglass_flowing_sand:
-##### Bloco 9: Assincronicidade & Callbacks
+##### Bloco 9: JavaScript e Testes Assíncronos
 
 - [X] 9-1: _JavaScript Assíncrono e Callbacks_
-- [ ] 9-2: _JavaScript Promises_
-- [ ] 9-3: _Projeto - Carrinho de Compras_
+- [X] 9-2: _JavaScript Assíncrono - Fetch API e async/await_
+- [X] 9-3: _Jest - Testes Assíncronos_
+- [ ] 9-4: _Projeto - Carrinho de Compras_
+
 
 ##### Bloco 10: Jest
 
