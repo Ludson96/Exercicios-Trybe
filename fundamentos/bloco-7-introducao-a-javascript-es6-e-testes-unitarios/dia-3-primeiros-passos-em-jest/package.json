@@ -2,7 +2,7 @@
   "name": "dia-3-primeiros-passos-em-jest",
   "version": "1.0.0",
   "description": "",
-  "main": "sum.js",
+  "main": "bonus.js",
   "scripts": {
     "test": "jest"
   },
@@ -10,6 +10,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "jest": "^28.1.1"
+    "jest": "^28.1.3"
   }
 }
