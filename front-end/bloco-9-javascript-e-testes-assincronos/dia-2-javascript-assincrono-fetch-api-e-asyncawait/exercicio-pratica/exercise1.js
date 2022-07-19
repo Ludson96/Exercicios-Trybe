@@ -1,21 +1,36 @@
-const apiUrl = 'https://api.coincap.io/v2/assets';
+const url = 'https://api.coincap.io/v2/assets';
 
-const fetchCrypto = () => {
-  const objectApi = {
+const fetchCoin = () => {
+  const myObject = {
     method: 'GET',
-    headers: { 'Accept-Encoding': 'gzip' }
+    headers: { 'Accept-Encoding': 'gzip' },
   };
 
-  fetch(apiUrl, objectApi)
-  .then(response => response.json())
-  .then(({ data }) => {
-    for (let index = 0; index < data.length; index += 1) {
-      const newLi = document.createElement('li');
-      const ul = document.getElementById('cripto');
-      ul.appendChild(newLi);
-      newLi.innerText = data[index].id
-    }
-  })
+  fetch(url, myObject)
+    .then(response => response.json())
+    .then(({ data }) => {
+      for (let index = 0; index < 10; index += 1) {
+        const newLI = document.createElement('li');
+        newLI.innerText = `${data[index].id} (${data[index].symbol}): ${data[index].priceUsd}`
+        const cripto = document.getElementById('cripto');
+        cripto.appendChild(newLI);
+      }
+    })
 }
 
-window.onload = () => fetchCrypto();
+const fetchUsdCurrencies = async () => {
+  const baseUrl = 'https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest'
+  const usdEndpoint = '/currencies/usd.min.json'
+  const url = baseUrl.concat(usdEndpoint);
+
+  const usdCurrencies = await fetch(url)
+    .then((response) => response.json())
+    .then((data) => console.log(data.usd))
+    .catch((error) => error.toString());
+
+  return usdCurrencies;
+};
+fetchUsdCurrencies()
+
+// window.onload = () => fetchCoin();
+fetchCoin();

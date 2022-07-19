@@ -29,6 +29,8 @@ front-end/bloco-9-javascript-e-testes-assincronos/dia-2-javascript-assincrono-fe
 front-end/bloco-10-introducao-a-react/dia-1-hello-world-no-react/exercicios-conteudo/exercicio-conteudo/package-lock.json
 front-end/bloco-10-introducao-a-react/dia-1-hello-world-no-react/exercicios-conteudo/exercicio-conteudo/package.json
 front-end/bloco-10-introducao-a-react/dia-1-hello-world-no-react/exercicios-conteudo/exercicio-conteudo/README.md
+front-end/bloco-10-introducao-a-react/dia-1-hello-world-no-react/exercicios-conteudo/exercicio-conteudo/public/index.html
+.gitignore
 front-end/bloco-10-introducao-a-react/dia-1-hello-world-no-react/exercicios-conteudo/exercicio-conteudo/public/favicon.ico
 front-end/bloco-10-introducao-a-react/dia-1-hello-world-no-react/exercicios-conteudo/exercicio-conteudo/public/logo192.png
 front-end/bloco-10-introducao-a-react/dia-1-hello-world-no-react/exercicios-conteudo/exercicio-conteudo/public/logo512.png
@@ -37,6 +39,8 @@ front-end/bloco-10-introducao-a-react/dia-1-hello-world-no-react/exercicios-cont
 front-end/bloco-10-introducao-a-react/dia-1-hello-world-no-react/exercicios-conteudo/exercicio-conteudo/src/App.test.js
 front-end/bloco-10-introducao-a-react/dia-1-hello-world-no-react/exercicios-conteudo/exercicio-conteudo/src/App.css
 front-end/bloco-10-introducao-a-react/dia-1-hello-world-no-react/exercicios-conteudo/exercicio-conteudo/public/index.html
+front-end/bloco-10-introducao-a-react/dia-1-hello-world-no-react/exercicios-conteudo/exercicio-conteudo/src/App.css
+front-end/bloco-10-introducao-a-react/dia-1-hello-world-no-react/exercicios-conteudo/exercicio-conteudo/src/App.test.js
 front-end/bloco-10-introducao-a-react/dia-1-hello-world-no-react/exercicios-conteudo/exercicio-conteudo/src/index.css
 front-end/bloco-10-introducao-a-react/dia-1-hello-world-no-react/exercicios-conteudo/exercicio-conteudo/src/logo.svg
 front-end/bloco-10-introducao-a-react/dia-1-hello-world-no-react/exercicios-conteudo/exercicio-conteudo/src/reportWebVitals.js
@@ -75,3 +79,6 @@ front-end/bloco-10-introducao-a-react/dia-2-componentes-react/exercicios-pratica
 front-end/bloco-10-introducao-a-react/dia-2-componentes-react/exercicios-pratica/my-pokedex/src/logo.svg
 front-end/bloco-10-introducao-a-react/dia-2-componentes-react/exercicios-pratica/my-pokedex/src/reportWebVitals.js
 front-end/bloco-10-introducao-a-react/dia-2-componentes-react/exercicios-pratica/my-pokedex/src/setupTests.js
+front-end/bloco-9-javascript-e-testes-assincronos/dia-2-javascript-assincrono-fetch-api-e-asyncawait/exercicio-pratica/style.css
+fundamentos/bloco-7-introducao-a-javascript-es6-e-testes-unitarios/dia-3-primeiros-passos-em-jest/bonus.spec.js
+fundamentos/bloco-7-introducao-a-javascript-es6-e-testes-unitarios/dia-3-primeiros-passos-em-jest/bonus.js
