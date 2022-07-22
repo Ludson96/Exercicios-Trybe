@@ -78,21 +78,20 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 9-1: _JavaScript Assíncrono e Callbacks_
 - [X] 9-2: _JavaScript Assíncrono - Fetch API e async/await_
 - [X] 9-3: _Jest - Testes Assíncronos_
-- [ ] 9-4: _Projeto - Carrinho de Compras_
+- [X] 9-4: _Projeto - Carrinho de Compras_
 
 
-##### Bloco 10: Jest
+##### Bloco 10: Introdução à React
 
-- [ ] 10-1: _Primeiros passos no Jest_
-- [ ] 10-2: _Jest - Testes Assíncronos_
-- [ ] 10-3: _Jest - Simulando comportamentos_
-- [ ] 10-4: _Projeto - Jest AssÃ­ncrono e Mocking_
+- [X] 10-1: _'Hello, world!' no React!_
+- [X] 10-2: _Componentes React_
+- [X] 10-3: _Projeto - Sistema Solar_
 
-##### Bloco 11: Introdução - React
+##### Bloco 11: Componentes com Estado, Eventos e Formulários com React
 
-- [ ] 11-1: _'Hello, world!' no React!_
-- [ ] 11-2: _Componentes React_
-- [ ] 11-3: _Projeto - Movie Cards Library_
+- [X] 11-1: _Componentes com estado e eventos_
+- [X] 11-2: _Formulários no React_
+- [ ] 11-3: _Projeto - Tryunfo_
 
 ##### Bloco 12: React
 
