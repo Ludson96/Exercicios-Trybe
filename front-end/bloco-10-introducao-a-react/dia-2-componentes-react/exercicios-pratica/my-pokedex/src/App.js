@@ -1,17 +1,13 @@
 import './App.css';
 import React from 'react';
 import pokemons from './data';
-import Estrutura from './pokemon';
+import Estrutura from './Estrutura';
 
 class App extends React.Component {
   render() {
-    pokemons.map((e) => {
-      return { name, type, averageWeight, image, moreInfo } = e;
-    })
     return (
-      <div>
-      pokemons
-        <Estrutura name='${e.}'/>
+      <div className='pokedex'>
+      {pokemons.map((e) => <Estrutura key={e.id} name={e.name} type={e.type} image={e.image} moreInfo={e.moreInfo} averageWeight={e.averageWeight} />)}
       </div>
     )
   }
