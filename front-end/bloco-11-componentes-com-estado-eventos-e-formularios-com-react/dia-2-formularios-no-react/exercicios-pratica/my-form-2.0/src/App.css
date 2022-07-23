@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.first {
+  margin: 10px;
+}
+
+.form-field {
+  margin-top: 10px;
+}
