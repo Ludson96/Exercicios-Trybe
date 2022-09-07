@@ -87,8 +87,13 @@
           body.style.color = '#fff' 
          }
 
-        if (status === 'online') { elementStatus.innerHTML = 'Online' }
-        if (status === 'offline') { elementStatus.innerHTML = 'Offline' }
+        if (status === 'online') {
+          statusButton.innerText = 'Ficar Offline'
+           elementStatus.innerHTML = 'Online' 
+          } else { 
+            statusButton.innerText = 'Ficar Online'
+            elementStatus.innerHTML = 'Offline' 
+          }
 
       })
     </script>

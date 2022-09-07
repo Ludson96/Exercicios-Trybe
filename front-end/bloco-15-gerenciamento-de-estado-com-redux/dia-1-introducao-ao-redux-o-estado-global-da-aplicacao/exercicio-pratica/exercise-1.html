@@ -31,7 +31,7 @@
       <p>Color: <span id="value">white</span></p>
       <button id="previous">Previous color</button>
       <button id="next">Next color</button>
-      <button>Random color</button>
+      <button id="random">Random color</button>
     </div>
     <script>
       const INITIAL_STATE = {
@@ -39,23 +39,49 @@
         index: 0,
       };
 
+      //types
+      const NEXT_COLOR = 'NEXT_COLOR';
+      const PREVIOUS_COLOR = 'PREVIOUS_COLOR';
+      const RANDOM_COLOR = 'RANDOM_COLOR';
+
+      //actions
+      const actionNext = () => ({ type: NEXT_COLOR });
+      const actionPrevious = () => ({ type: PREVIOUS_COLOR });
+      const actionRandom = () => ({ type: RANDOM_COLOR });
+
       const reducer = (state = INITIAL_STATE, action) => {
         switch (action.type) {
 
-          case 'NEXT_COLOR':
-            return {
+          case NEXT_COLOR: return {
               ...state,
-              index: state.index === state.colors.length ? 0 : state.index + 1,
+              index: state.index === (state.colors.length - 1) ? 0 : state.index + 1,
             };
-            case 'PREVIOUS_COLOR':
-            return {
+
+            case PREVIOUS_COLOR: return {
               ...state,
-              index: state.index === 0 ? state.colors.length : state.index - 1,
+              index: state.index === 0 ? (state.colors.length - 1) : state.index - 1,
             };
+
+            case RANDOM_COLOR: return {
+              ...state,
+              colors: [...state.colors, criarCor()],
+              index: state.colors.length,
+            };
+
           default:
             return state;
         }
       }
+
+      function criarCor() {
+    const oneChar = ['1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'];
+    let cor = '#';
+    const aleatorio = () => Math.floor(Math.random() * oneChar.length);
+    for (let i = 0; i < 6; i += 1) {
+        cor += oneChar[aleatorio()];
+    }
+    return cor;
+}
 
       const store = Redux.createStore(reducer)
 
@@ -63,14 +89,19 @@
       const btnNext = document.getElementById('next');
       const value = document.getElementById('value');
       const container = document.getElementById('container');
+      const random = document.getElementById('random');
 
       btnPrevious.addEventListener('click', () => {
-        store.dispatch({ type: 'PREVIOUS_COLOR' });
+        store.dispatch(actionPrevious());
       });
 
       btnNext.addEventListener('click', () => {
-        store.dispatch({ type: 'NEXT_COLOR' });
+        store.dispatch(actionNext());
       });
+
+      random.addEventListener('click', () => {
+        store.dispatch(actionRandom());
+      })
 
       store.subscribe(() => {
         const { colors, index } = store.getState();
