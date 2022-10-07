@@ -10,7 +10,6 @@ function FormProvider({ children }) {
 
   const contextValue = {
     data,
-    setData,
     addData,
   };
   
