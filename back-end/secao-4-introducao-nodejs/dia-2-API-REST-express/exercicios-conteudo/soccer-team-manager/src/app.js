@@ -17,61 +17,64 @@ const app = express();
 
 app.use(express.json());
 
-app.get('/', (req, res) => res.status(200).json({ message: 'Olá Mundo!' }));
+// app.get('/', (req, res) => res.status(200).json({ message: 'Olá Mundo!' }));
 
-app.get('/teams', (req, res) => res.status(200).json({ teams }));
+// app.get('/teams', (req, res) => res.status(200).json({ teams }));
 
 app.post('/teams', (req, res) => {
   const newTeam = { ...req.body };
+  console.log(req.body);
   teams.push(newTeam);
+  console.log(teams);
 
-  res.status(201).json({ team: newTeam });
+  // res.status(201).json({ team: newTeam });
+  res.status(201).send(teams);
 });
 
-app.put('/teams/:id', (req, res) => {
-  const { id } = req.params;
-  const { name, initials } = req.body;
+// app.put('/teams/:id', (req, res) => {
+//   const { id } = req.params;
+//   const { name, initials } = req.body;
 
-  const updateTeam = teams.find((team) => team.id === Number(id));
+//   const updateTeam = teams.find((team) => team.id === Number(id));
 
-  if (!updateTeam) {
-    res.status(404).json({ message: 'Team not found' });
-  }
+//   if (!updateTeam) {
+//     res.status(404).json({ message: 'Team not found' });
+//   }
 
-  updateTeam.name = name;
-  updateTeam.initials = initials;
-  res.status(200).json({ updateTeam });
-});
+//   updateTeam.name = name;
+//   updateTeam.initials = initials;
+//   res.status(200).json({ updateTeam });
+// });
 
-app.get('/teams/:id', (req, res) => {
-  const { id } = req.params;
+// app.get('/teams/:id', (req, res) => {
+//   const { id } = req.params;
 
-  const listTeam = teams.find((team) => team.id === Number(id));
+//   const listTeam = teams.find((team) => team.id === Number(id));
 
-  if (!listTeam) {
-    res.status(404).json({ message: 'Team not found' });
-  }
+//   if (!listTeam) {
+//     res.status(404).json({ message: 'Team not found' });
+//   }
 
-  res.status(200).json({ listTeam });
-});
+//   res.status(200).json({ listTeam });
+// });
 
-app.delete('/teams/:id', (req, res) => {
-  const { id } = req.params;
-  const arrayPosition = teams.findIndex((team) => team.id === Number(id));
-  teams.splice(arrayPosition, 1);
+// app.delete('/teams/:id', (req, res) => {
+//   const { id } = req.params;
+//   const arrayPosition = teams.findIndex((team) => team.id === Number(id));
+//   teams.splice(arrayPosition, 1);
 
-  res.status(200).end();
-});
+//   res.status(200).end();
+// });
 
-app.get('/teams', (req, res) => {
-  const { status } = req.query;
-  let filteredActivities = teams;
+// app.get('/teams', (req, res) => {
+//   const { status } = req.query;
+//   let filteredActivities = teams;
 
-  if (status) {
-    filteredActivities = teams.filter((activity) => activity.status === status);
-  }
+//   if (status) {
+//     filteredActivities = teams.filter((activity) => activity.status === status);
+//   }
 
-  res.status(200).json({ activities: filteredActivities });
-});
+//   res.status(200).json({ activities: filteredActivities });
+// });
 
 module.exports = app;
