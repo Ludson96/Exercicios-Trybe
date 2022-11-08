@@ -1,0 +1,3 @@
+Exercicio git está na pasta nos eexercicios git.
+
+para não da conflito no git eu coloquei lá
