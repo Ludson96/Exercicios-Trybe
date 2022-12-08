@@ -24,3 +24,8 @@ export function triangleCheck(
   const checkSideC = (sideA - sideB) < sideC && sideC < (sideA + sideB);
   return checkSideA && checkSideB && checkSideC;
 }
+
+export function getLosangoArea(dMaior: number, dMenor: number): number {
+  return (dMaior * dMenor) / 2;
+}
+
