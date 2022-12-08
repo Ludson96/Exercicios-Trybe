@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getLosangoArea = exports.triangleCheck = exports.getPolygonPerimeter = exports.getTriangleArea = exports.getRectangleArea = exports.getSquareArea = void 0;
+exports.getTrapezioArea = exports.getLosangoArea = exports.triangleCheck = exports.getPolygonPerimeter = exports.getTriangleArea = exports.getRectangleArea = exports.getSquareArea = void 0;
 function getSquareArea(side) {
     return side ** 2;
 }
@@ -28,3 +28,7 @@ function getLosangoArea(dMaior, dMenor) {
     return (dMaior * dMenor) / 2;
 }
 exports.getLosangoArea = getLosangoArea;
+function getTrapezioArea(B, b, h) {
+    return ((B + b) * h) / 2;
+}
+exports.getTrapezioArea = getTrapezioArea;

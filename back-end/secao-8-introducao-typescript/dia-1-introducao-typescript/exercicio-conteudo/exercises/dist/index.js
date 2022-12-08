@@ -42,3 +42,7 @@ console.log("\n VERIFICA A AREA DE UM LOSANGO: ");
 console.log(`- D = 32cm e d = 18cm: ${Ex.getLosangoArea(32, 18)}cm2`);
 console.log(`- D = 200cm e d = 50cm: ${Ex.getLosangoArea(200, 50)}cm2`);
 console.log(`- D = 75cm e d = 25cm: ${Ex.getLosangoArea(75, 25)}cm2`);
+console.log("\n VERIFICA A AREA DE UM TRAPEZIO: ");
+console.log(`- B = 100cm, b = 70cm e altura = 50cm: ${Ex.getTrapezioArea(100, 70, 50)}cm2`);
+console.log(`- B = 75cm, b = 50cm e altura = 35cm: ${Ex.getTrapezioArea(75, 50, 35)}cm2`);
+console.log(`- B = 150cm, b = 120cm e altura = 80cm: ${Ex.getTrapezioArea(150, 120, 80)}cm2`);

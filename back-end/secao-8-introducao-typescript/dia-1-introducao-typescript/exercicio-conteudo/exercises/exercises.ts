@@ -29,3 +29,6 @@ export function getLosangoArea(dMaior: number, dMenor: number): number {
   return (dMaior * dMenor) / 2;
 }
 
+export function getTrapezioArea(B: number, b: number, h: number): number {
+  return ((B + b) * h ) / 2;
+}
