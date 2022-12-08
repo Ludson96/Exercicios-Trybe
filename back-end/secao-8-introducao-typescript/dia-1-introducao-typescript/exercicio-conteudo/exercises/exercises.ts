@@ -32,3 +32,7 @@ export function getLosangoArea(dMaior: number, dMenor: number): number {
 export function getTrapezioArea(B: number, b: number, h: number): number {
   return ((B + b) * h ) / 2;
 }
+
+export function getCircleArea(r: number): number {
+  return (Math.PI * r**2);
+}
