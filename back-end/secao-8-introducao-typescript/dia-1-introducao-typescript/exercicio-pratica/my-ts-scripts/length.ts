@@ -1,3 +1,5 @@
+const readline = require('readline-sync');
+
 const units = ['km', 'hm', 'dam', 'm', 'dm', 'cm', 'mm'];
 
 export function convert(value: number, fromUnit: string, toUnit: string): number {
@@ -6,4 +8,8 @@ export function convert(value: number, fromUnit: string, toUnit: string): number
   const exponent = toIndex - fromIndex; // calculamos o expoente a partir da diferença dos index
 
   return value * Math.pow(10, exponent);
+}
+
+function main() {
+  const valor = readline.question()
 }

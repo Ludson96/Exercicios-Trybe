@@ -1,3 +1,5 @@
+const readline = require('readline-sync');
+
 const units = ['kg', 'hg', 'dag', 'g', 'dg', 'cg', 'mg'];
 
 export function convert (valor: number, uniBas: string, uniCon: string): number {

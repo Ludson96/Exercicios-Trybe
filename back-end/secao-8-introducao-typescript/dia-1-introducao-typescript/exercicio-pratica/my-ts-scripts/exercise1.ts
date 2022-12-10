@@ -1,3 +1,5 @@
+const readline = require('readline-sync');
+
 type Character = {
   nickname: string;
   class: string;

@@ -1,4 +1,5 @@
 "use strict";
+const readline = require('readline-sync');
 const characters = [
     {
         nickname: 'xKillerx',

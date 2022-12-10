@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.convert = void 0;
+const readline = require('readline-sync');
 const units = ['kg', 'hg', 'dag', 'g', 'dg', 'cg', 'mg'];
 function convert(valor, uniBas, uniCon) {
     const uniBase = units.indexOf(uniBas);
