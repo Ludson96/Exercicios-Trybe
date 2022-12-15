@@ -1,6 +1,8 @@
 import { Model, INTEGER, STRING } from 'sequelize';
 import db from '.'
 
+import Author from './Author';
+
 class Book extends Model {
   declare id: number;
   declare title: string;
@@ -46,5 +48,9 @@ Book.init({
   modelName: 'books',
   timestamps: false,
 });
+
+Book.belongsTo(Author);
+
+Author.hasMany(Book);
 
 export default Book;
