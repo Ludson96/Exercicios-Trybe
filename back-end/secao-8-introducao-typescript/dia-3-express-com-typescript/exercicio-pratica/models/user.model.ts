@@ -12,6 +12,12 @@ export default class UserModel {
     const result = await this.connection.execute('SELECT * FROM Users');
     const [rows] = result;
     return rows as IUser[];
-    
+  }
+
+  public async getById(id: number): Promise<IUser> {
+    const [rows] = await this.connection
+      .execute('SELECT * FROM Users WHERE id = ?', [id]);
+      const [user] = rows as IUser[];
+    return user as IUser;
   }
 }
