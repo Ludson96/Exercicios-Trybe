@@ -31,4 +31,32 @@ export default class UserController {
       })
     }
   }
+
+  public createUser = async (req: Request, res: Response) => {
+    try {
+      const user = req.body;
+      const newUser = await this.userService.createUser(user);
+      res.status(statusCodes.CREATED).json(newUser);
+    } catch (e) {
+      const result = (e as Error).message;
+      res.status(statusCodes.INTERNAL_ERROR).json({
+        message: 'Não foi possivel criar usuário',
+        error: result,
+      })
+    }
+  }
+
+  public deleteUser = async (req: Request, res: Response) => {
+    try {
+      const id = Number(req.params.id);
+      await this.userService.deleteUser(id);
+      res.status(statusCodes.OK).json({ message: 'Usuário deletado '});
+    } catch (e) {
+      const erro = (e as Error).message;
+      res.status(statusCodes.INTERNAL_ERROR).json({
+        message: 'Não foi possivel deletar o usuário',
+        erro,
+      })
+    }
+  }
 }

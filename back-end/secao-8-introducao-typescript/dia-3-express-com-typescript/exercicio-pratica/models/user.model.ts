@@ -9,8 +9,7 @@ export default class UserModel {
   }
 
   public async getAll(): Promise<IUser[]> {
-    const result = await this.connection.execute('SELECT * FROM Users');
-    const [rows] = result;
+    const [rows] = await this.connection.execute('SELECT * FROM Users');
     return rows as IUser[];
   }
 
@@ -19,5 +18,21 @@ export default class UserModel {
       .execute('SELECT * FROM Users WHERE id = ?', [id]);
       const [user] = rows as IUser[];
     return user as IUser;
+  }
+
+  public async createUser(user: IUser): Promise<IUser> {
+    const { name, email, password } = user;
+    const [{ insertId }] = await this.connection.execute<ResultSetHeader>(
+        'INSERT INTO Users(name, email, password) VALUES(?, ?, ?)',
+        [name, email, password]
+      );
+    return { id: insertId, ...user }
+  }
+
+  public async deleteUser(id: number): Promise<void> {
+    await this.connection.execute(
+      'DELETE FROM Users WHERE id = ?', [id]
+    );
+
   }
 }
